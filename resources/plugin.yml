@@ -1,0 +1,9 @@
+name: ${project.name}
+main: com.poixson.flatworldgen.FlatWorldGenPlugin
+version: ${project.version}
+api-version: ${spigot-short-version}
+depend:
+  - pxnPluginLib
+authors: [ lorenzop ]
+website: ${project.url}
+description: ${project.description}
