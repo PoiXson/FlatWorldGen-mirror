@@ -38,9 +38,9 @@ public class FlatWorldChunkGenerator extends ChunkGenerator {
 				throw new NullPointerException("Invalid layer: " + part);
 			final int height = Integer.parseInt(prts[0]);
 			// fill layer blocks
-			for (int i=0; i<height; i++) {
+			for (int iy=0; iy<height; iy++) {
 				// find layer type
-				final ChunkLayer layer = ChunkLayer.FromString(y+i, prts[1]);
+				final ChunkLayer layer = ChunkLayer.FromString(y+iy, prts[1]);
 				if (layer == null)
 					throw new NullPointerException("Unknown material: " + prts[1]);
 				layers.add(layer);
