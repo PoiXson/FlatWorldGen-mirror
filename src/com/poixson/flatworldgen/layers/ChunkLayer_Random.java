@@ -20,7 +20,7 @@ public class ChunkLayer_Random implements ChunkLayer {
 
 	protected final double total_percent;
 
-	protected final xRand random = new xRand();
+	protected final xRand random = (new xRand()).seed_time();
 
 
 
