@@ -92,7 +92,7 @@ public class ChunkLayer_Random implements ChunkLayer {
 				double d = 0.0;
 				BlockData lastBlock = null;
 				// random number
-				final double rnd = this.random.nextDbl(0, this.total_percent);
+				final double rnd = this.random.nextDouble(0, this.total_percent);
 				while (it.hasNext()) {
 					final Entry<BlockData, Double> entry = it.next();
 					final Double val = entry.getValue();
