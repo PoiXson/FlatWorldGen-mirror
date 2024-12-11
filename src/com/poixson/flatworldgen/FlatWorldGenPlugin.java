@@ -6,9 +6,7 @@ import com.poixson.tools.xJavaPlugin;
 
 
 public class FlatWorldGenPlugin extends xJavaPlugin {
-//TODO: spigot id
-	@Override public int getSpigotPluginID() { return 0; }
-	@Override public int getBStatsID() {       return 21474;  }
+	@Override public int getBStatsID() { return 21474; }
 
 
 
