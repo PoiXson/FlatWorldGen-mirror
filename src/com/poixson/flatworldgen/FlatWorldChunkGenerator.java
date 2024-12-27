@@ -1,5 +1,7 @@
 package com.poixson.flatworldgen;
 
+import static com.poixson.utils.Utils.IsEmpty;
+
 import java.util.LinkedList;
 import java.util.Random;
 
@@ -8,7 +10,6 @@ import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.generator.WorldInfo;
 
 import com.poixson.flatworldgen.layers.ChunkLayer;
-import com.poixson.utils.Utils;
 
 
 public class FlatWorldChunkGenerator extends ChunkGenerator {
@@ -26,13 +27,13 @@ public class FlatWorldChunkGenerator extends ChunkGenerator {
 
 
 	public static ChunkLayer[] DecodeLayersString(final String layersStr) {
-		if (Utils.IsEmpty(layersStr))
+		if (IsEmpty(layersStr))
 			return new ChunkLayer[0];
 		final LinkedList<ChunkLayer> layers = new LinkedList<ChunkLayer>();
 		final String[] parts = layersStr.split("[|]");
 		int y = -64;
 		for (final String part : parts) {
-			if (Utils.IsEmpty(part)) continue;
+			if (IsEmpty(part)) continue;
 			final String[] prts = part.split("[=]");
 			if (prts.length < 2)
 				throw new NullPointerException("Invalid layer: " + part);

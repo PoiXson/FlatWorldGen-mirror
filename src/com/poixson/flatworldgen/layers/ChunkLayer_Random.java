@@ -1,5 +1,7 @@
 package com.poixson.flatworldgen.layers;
 
+import static com.poixson.utils.Utils.IsEmpty;
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
@@ -9,7 +11,6 @@ import org.bukkit.block.data.BlockData;
 import org.bukkit.generator.ChunkGenerator.ChunkData;
 
 import com.poixson.tools.xRand;
-import com.poixson.utils.Utils;
 
 
 public class ChunkLayer_Random implements ChunkLayer {
@@ -44,7 +45,7 @@ public class ChunkLayer_Random implements ChunkLayer {
 			{
 				final double percent = Double.parseDouble(prts[0]);
 				final Material mat = (
-					Utils.IsEmpty(prts[1])
+					IsEmpty(prts[1])
 					? Material.AIR
 					: Material.getMaterial( prts[1].toUpperCase() )
 				);

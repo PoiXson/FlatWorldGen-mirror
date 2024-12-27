@@ -1,9 +1,9 @@
 package com.poixson.flatworldgen.layers;
 
+import static com.poixson.utils.Utils.IsEmpty;
+
 import org.bukkit.Material;
 import org.bukkit.generator.ChunkGenerator.ChunkData;
-
-import com.poixson.utils.Utils;
 
 
 public interface ChunkLayer {
@@ -16,7 +16,7 @@ public interface ChunkLayer {
 
 	public static ChunkLayer FromString(final int y, final String str) {
 		// air
-		if (Utils.IsEmpty(str))
+		if (IsEmpty(str))
 			return new ChunkLayer_SingleType(y, Material.AIR);
 		// random blocks by percent
 		if (str.indexOf('%') != -1)
