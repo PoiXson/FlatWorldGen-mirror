@@ -11,7 +11,7 @@ public class FlatWorldGenPlugin extends xJavaPlugin {
 
 
 	public FlatWorldGenPlugin() {
-		super(FlatWorldGenPlugin.class);
+		super();
 	}
 
 
