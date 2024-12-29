@@ -1,0 +1,11 @@
+FlatWorldGen - World generator for flat Worlds
+
+
+2025-- - 0.2.
+===================
+
+
+2024-12-08 - 0.1.5
+==================
+* Spigot 1.21.1 - Java 21
+* last commit with spigot dependencies - switching to paper api
