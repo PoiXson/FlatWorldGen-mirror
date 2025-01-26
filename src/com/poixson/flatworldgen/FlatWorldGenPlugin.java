@@ -5,7 +5,7 @@ import org.bukkit.generator.ChunkGenerator;
 import com.poixson.tools.xJavaPlugin;
 
 
-public class FlatWorldGenPlugin extends xJavaPlugin {
+public class FlatWorldGenPlugin extends xJavaPlugin<FlatWorldGenPlugin> {
 	@Override public int getBStatsID() { return 21474; }
 
 
